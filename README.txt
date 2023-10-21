@@ -55,12 +55,19 @@ KT RandomSearch Benchmark Steps:
 ESGD Benchmark Steps:
 - In the anonymous_populationDescent folder, run the following instructions:
 
-"cd ESGD_FMNIST_Benchmark"
-"python3 -m venv m1"
-"source m1/bin/activate"
-"pip3 install -r requirements.txt"
-"python3 -m esgd-ws -a "esgd"
+(to run FMNIST Benchmark without regularization):
+- "cd ESGD_FMNIST_Benchmark"
+- "python3 -m venv m1"
+- "source m1/bin/activate"
+- "pip3 install -r requirements.txt"
+- "python3 -m esgd-ws -a "esgd""
 
+(to run CIFAR Benchmark without regularization):
+- "cd ESGD_CIFAR_Benchmark"
+- "python3 -m venv m1"
+- "source m1/bin/activate"
+- "pip3 install -r requirements.txt"
+- "python3 -m esgd-ws -a "esgd""
 
 
 
@@ -76,6 +83,51 @@ ESGD Benchmark Steps:
 (to run FMNSIT Ablation with regularization, with randomization): "python3 -m ablation_withReg_withRand_FMNIST"
 (to run FMNSIT Ablation without regularization, without CV): "python3 -m ablation_noReg_noCV_FMNIST"
 (to run FMNSIT Ablation without regularization, with CV): "python3 -m ablation_noReg_withCV_FMNIST"
+
+
+
+
+3) PARAMETER SENSITIVITY TESTS: Test PopDescent and ESGD individually for iterations/learning rates
+- In the anonymous_populationDescent folder, run the following instructions:
+
+(to run PD on CIFAR while changing the iterations):
+
+"cd PD_CIFAR_Sensitivity"
+"python3 -m venv m1"
+"source m1/bin/activate"
+"pip3 install -r requirements_m1_metal.txt"
+"python3 -m PD_CIFAR_Sensitivity_it"
+
+(to run PD on CIFAR while changing the learning rate):
+
+"cd PD_CIFAR_Sensitivity"
+"python3 -m venv m1"
+"source m1/bin/activate"
+"pip3 install -r requirements_m1_metal.txt"
+"python3 -m PD_CIFAR_Sensitivity_lr"
+
+
+(to run ESGD on CIFAR while changing the iterations):
+
+"cd ESGD_CIFAR_Sensitivity"
+"python3 -m venv m1"
+"source m1/bin/activate"
+"pip3 install -r requirements.txt"
+"python3 -m esgd-ws-it -a "esgd""
+
+(to run ESGD on CIFAR while changing the learning rate):
+
+"cd ESGD_CIFAR_Sensitivity"
+"python3 -m venv m1"
+"source m1/bin/activate"
+"pip3 install -r requirements.txt"
+"python3 -m esgd-ws-lr -a "esgd""
+
+
+
+
+
+
 
 
 
