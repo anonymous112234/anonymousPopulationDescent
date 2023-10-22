@@ -1,6 +1,8 @@
 Running tests from PopDescent ICLR 2024 Submission Paper:
 
+
 FOR ALL TESTS:
+- The file "Test Parameters.pdf" contains all notes on how to reproduce all tests in the paper
 - all seeds are preloaded, you simply have to follow the commands listed below
 - we ran all tests on an M1 silicon macbook, but we have requirements.txt that do not use the M1 chip as well
 - all results are saved to a .csv file on the local desktop, but the direct filepath can be changed at the bottom of any test below
