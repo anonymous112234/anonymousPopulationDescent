@@ -1,3 +1,5 @@
+"Test Parameters.pdf" reviews all parameters used to reproduce tests, and also supplemental material, such as specific test data.
+
 Running tests from PopDescent ICLR 2024 Submission Paper:
 
 
